@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Moderustic", sans-serif;
+    font-weight: 100;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #201E43;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav .nav-a{
+    margin-right: 20px;
+}
+nav .nav-a a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    float:right;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav img{
+    width: 60px;
+    background-color: white;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+video{
+    position: absolute;
+    width: 100%;
+}
+.bg-img-attachment{
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    background-image: url(https://mapmycrop.com/wp-content/uploads/2024/03/Api_banner.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-img-attachment p{
+    position: absolute;
+    font-size: 120px;
+    font-weight: bold;
+    border: 2px solid white;
+    top: 30%;
+}
+.bg-img img{
+    width: 100%;
+    opacity: 0.1;
+}
+.advert{
+    width: 30%;
+    height: 400px;
+    overflow: auto;
+    position: absolute;
+    float: right;
+    margin-left: 60%;
+    background-color: #508C9B;
+    -ms-scroll-chaining: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.advert:hover{
+    scale:1.1;
+    box-shadow: 2px 2px 2px black;
+}
+.advert p{
+    padding: 15px;
+    text-align: center;
+}
+.About-Us1{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.About-Us1 img{
+    width: 40%;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+
+}
+.heading{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 0.1rem;
+    background: rgba(0,0,0,0.1);
+    z-index: -1;
+}
+.heading span{
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    color: black;
+    background: white;
+    border: 1px solid rgb(230,230,230);
+}
+.scheme{
+    width: 29%;
+    height: fit-content;
+    border: 2px solid gray;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.scheme img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.scheme a{
+    width: 100%;
+    color: green;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid gray;
+}
+.Govt-Schemes-con{
+    display: flex;
+    flex-wrap: wrap;
+}
+.loadmore a{
+    text-decoration: none;
+    color: green;
+    position: absolute;
+    right: 60px;
+    border: 2px solid gray;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    border-radius:10px;
+}
+#govtschemes{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scheme{
+    width: 29%;
+}
+.disschemes{
+    display: flex;
+}
+.disschemesdiv{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+form select{
+    width: 40%;
+    height: 40px;
+    margin-left: 50px;
+    border: 2px solid lightgray;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+#form-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+#form-details input{
+    width: 34%;
+    margin-left: 10%;
+}
+#cropdetails{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    width: 77%;
+    text-align: center;
+    border: 2px solid lightblue;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+form #button{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid green;
+    color: green;
+}
+form #button:hover{
+    color: white;
+    background-color: green;
+}
+.error{
+color: red;
+margin-bottom: 20px;
+font-size: 18px;
+}
+textarea{
+    width: 80%;
+    border: 2px solid lightgray;
+    outline: none;
+    margin-bottom: 20px;
+}
